@@ -7,7 +7,7 @@ import kotlin.math.sqrt
 
 
 fun main(){
-    val arr = intArrayOf(5,6,7,8,9,10)
+    val arr = intArrayOf(1,2,3)
     println(calculateStandardDeviation(arr))
 }
 
