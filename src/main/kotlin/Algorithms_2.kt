@@ -1,6 +1,8 @@
 package org.example
 
-import kotlin.math.sqrt
+import java.lang.Math.sqrt
+import java.sql.DriverManager.println
+
 
 //sigma notation - standard deviation
 
@@ -8,21 +10,20 @@ import kotlin.math.sqrt
 
 fun main(){
     val arr = intArrayOf(1,2,3)
-    println(calculateStandardDeviation(arr))
+    println(calculateStandardDeviation(arr).toString())
 }
 
 
-fun calculateStandardDeviation(arr:IntArray) : Double{
+fun calculateStandardDeviation(arr: IntArray): Double {
     var sum = 0.0
     val length = arr.size.toDouble()
     var sigmaNotation = 0.0
-    //calculate avg of array indexes
-    for(i in arr){
-        sum+=i
+    for (i in arr) {
+        sum += i
     }
     val avg = sum / arr.size
-    for(i in arr){
-        sigmaNotation+=((i-avg)*(i-avg))
+    for (i in arr) {
+        sigmaNotation += ((i - avg) * (i - avg))
     }
     val standardDeviation = sqrt((sigmaNotation / length))
     return standardDeviation

@@ -1,16 +1,17 @@
 package org.example
 
-import kotlin.math.sqrt
+import java.lang.Math.sqrt
+import java.sql.DriverManager.println
 
 //correlation
 
 fun main() {
     val arrX = intArrayOf(1, 2, 3, 4, 5, 6)
     val arrY = intArrayOf(1, 2, 3, 4, 5, 6)
-    println(calculateCorrelation(arrX, arrY))
+    println(calculateCorrelation(arrX, arrY).toString())
 }
 
-fun calculateCorrelation(arrX: IntArray, arrY: IntArray) : Int {
+fun calculateCorrelation(arrX: IntArray, arrY: IntArray): Int {
     var topEquation = 0
     var downEquationOne = 0
     var downEquationTwo = 0
