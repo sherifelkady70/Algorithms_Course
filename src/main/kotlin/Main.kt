@@ -3,4 +3,10 @@ package org.example
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 fun main() {
+
+    val arr = intArrayOf(10,6,5,3,0,30)
+    val sortedArr = insertionSort(arr)
+    sortedArr.forEach {
+        print(" $it ")
+    }
 }
