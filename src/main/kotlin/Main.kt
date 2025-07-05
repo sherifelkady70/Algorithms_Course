@@ -5,8 +5,8 @@ package org.example
 fun main() {
 
     val arr = intArrayOf(10,6,5,3,0,30,-1)
-    val sortedArr = insertionSort(arr)
-    sortedArr.forEach {
+    insertionSort(arr)
+    arr.forEach {
         print(" $it ")
     }
 }
